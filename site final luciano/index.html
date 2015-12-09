@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Gallerised
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Cidade dos Anjos, o Filme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="layout/styles/jquery-ui.css">
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<!-- s3slider -->
+<script type="text/javascript" src="layout/scripts/jquery.s3slider.js"></script>
+<script src="layout/scripts/jquery-ui.js"></script>
+<style>
+  .ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  </style>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#featured_slide_').s3Slider({
+		timeOut:6000 
+	});
+
+    $(function() {
+    var progressbar = $( "#progressbar" ),
+      progressLabel = $( ".progress-label" );
+ 
+    progressbar.progressbar({
+      value: false,
+      change: function() {
+        progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+      },
+      complete: function() {
+        progressLabel.text( "Carregado! Divirta-se!!" );
+      }
+    });
+ 
+    function progress() {
+      var val = progressbar.progressbar( "value" ) || 0;
+ 
+      progressbar.progressbar( "value", val + 2 );
+ 
+      if ( val < 99 ) {
+        setTimeout( progress, 80 );
+      }
+    }
+ 
+    setTimeout( progress, 2000 );
+  });
+  
+
+});
+
+
+</script>
+<!-- / s3slider -->
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div id="topnav">
+      <ul>
+        <li class="last"><a href="gallery.html">Galeria</a><span>Imagens</span></li>
+        <li><a href="#">Links</a><span>Links relacionados</span>
+          <ul>
+            <li><a href="http://www.sonypictures.com.br/">Sony Pictures</a></li>
+            <li><a href="http://www.warnerchannel.com/br/">Warner</a></li>
+            <li><a href="http://www.paramountstudios.com/">Paramount Studios</a></li>
+          </ul>
+        </li>
+        <li><a href="full-width.html">Mídia</a><span>Trilha e trailer</span></li>
+        <li><a href="style-demo.html">O Filme</a><span>Informações do filme</span></li>
+        <li class="active"><a href="index.html">Página Inicial</a><span>Página Inicial</span></li>
+      </ul>
+    </div>
+    <div class="fl_left">
+      <h1><a href="index.html">Cidade dos Anjos</a></h1>
+      <p>A paixão de um anjo por uma mortal</p>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+    
+        
+
+
+<div class="wrapper col2">
+  <div id="featured_slide_">
+    <ul id="featured_slide_Content">
+      <li class="featured_slide_Image"><a href="gallery.html"><img src="images/demo/homepage/imagem7.jpg" alt="" /></a>
+        <div class="introtext">
+          <h2>Surpreendente</h2>
+          <p>Cidade dos Anjos, que foi produzido por Gabriel Yared, foi indicado à muitos prêmios, entre eles o MTV Movie Awards, o Globo de Ouro, o Golden Satellite Awards, ao Grammy.</p>
+        </div>
+      </li>
+      <li class="featured_slide_Image"><a href="gallery.html"><img src="images/demo/homepage/imagem2.jpg" alt="" /></a>
+        <div class="introtext">
+          <h2>Romântico</h2>
+          <p>É um filme essencial a todos aqueles que apreciam um bom romance, que traz um desfecho nada comum (e graças a Deus, sem os clichês que assolam o gênero), e é recomendado até para aquelas pessoas que não curtem o gênero, pois este filme tem o poder de “conquistar” pessoas. E cumpre essa função brilhantemente!
+</p>
+        </div>
+      </li>
+      <li class="featured_slide_Image"><a href="gallery.html"><img src="images/demo/homepage/imagem3.jpg" alt="" /></a>
+        <div class="introtext">
+          <h2>Bem Produzido</h2>
+          <p>Cidade dos Anjos foi inspirado num filme pouco conhecido “Der Himmel über Berlin”, ou simplesmente Wings of Desire, de 1987. O filme alemão dirigido por Wim Wenders (de O Hotel de 1 Milhão de Dólares) chegou ao Brasil sobre o titulo de “Asas do Desejo” e rendeu boas críticas. 
+</p>
+        </div>
+      </li>
+      <li class="featured_slide_Image"><a href="gallery.html"><img src="images/demo/homepage/imagem4.jpg" alt="" /></a>
+        <div class="introtext">
+          <h2>Superação</h2>
+          <p>Nicolas Cage nunca esteve tão bem caracterizado em um personagem. Aliás, o filme é até uma pausa na carreira do ator, que até então se concentrava em fazer filmes de ação. Já Meg Ryan é uma veterana em filmes e comédias românticas. Ficou muito boa também como Maggie, a médica racional que se apaixona por um anjo.</p>
+        </div>
+      </li>
+      <li class="featured_slide_Image"><a href="gallery.html"><img src="images/demo/homepage/imagem5.jpg" alt="" /></a>
+        <div class="introtext">
+          <h2>Opinião</h2>
+          <p>"Em meio à tantos romances meia bocas por aí, este consegue ser bonito, conter uma boa mensagem e, ainda por cima, ser popular." - Tony Pugliese, Crítico de Cinema</p>
+        </div>
+      </li>
+      <li class="clear featured_slide_Image"> 
+        <!-- Leave This Empty --> 
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th><div id="progressbar"><div class="progress-label">Carregando Site...</div></div></th>
+            
+          </tr>
+        </thead>
+      </table>
+
+<div class="wrapper col5">
+  <div id="footer">
+    <p class="fl_left">Copyright &copy; 2015 - Todos os direitos reservados - Designer Luciano O. Medina - TADS II IfSul - Bagé</p>
+    <p class="fl_right">Template por <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <p class="fl_right"><embed src="trilha/07 Goo Goo Dolls - Iris.mp3" autostart="true" loop="1" hidden="true" > </embed></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

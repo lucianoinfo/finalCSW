@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Gallerised
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Cidade dos Anjos, Mídia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+</head>
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript">
+    
+
+    diretorio = "trilha/";
+    musicas = ["01 U2 - If God Will Send His Angels", "02 Alamis Morissette - Uninvited", "03 Jimi Hendrix - Red House", "04 Paula Cole - Feeling' Love", "05 John Lee Hooker - Mama, You Got A Daughter", "06 Sarah Mclachlan - Angel", "07 Goo Goo Dolls - Iris", "08 Peter Gabriel - I Grieve", "09 Jude - I Know", "10 Eric Clapton - Further On Up The Road","11 Gabriel Yared - An Angel Falls", "12 Gabriel Yared - The Unfeeling Kiss", "13 Gabriel Yared - Spreading Wings", "14 Gabriel Yared - City Of Angels"];
+      musicaAtual = 0;
+      $(document).ready(function() {
+        carregaMusica();
+        $("#btnNext").click(function() {
+            musicaAtual++;
+            carregaMusica();
+            display.innerHTML = "Tocando - "+musicaAtual;
+        });    
+        $("#btnAnt").click(function() {
+            musicaAtual--;
+            carregaMusica();
+            display.innerHTML = "Tocando - "+musicaAtual;
+        });            
+             
+    });  
+
+
+    carregaMusica = function() {
+        $("#player-source").attr("src", diretorio+musicas[musicaAtual]+".mp3");
+        $("#player").load();                
+    }
+</script>
+
+
+
+
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div id="topnav">
+      <ul>
+        <li class="last"><a href="gallery.html">Galeria</a><span>Imagens</span></li>
+        <li><a href="#">Links</a><span>Links Relacionados</span>
+          <ul>
+            <li><a href="http://www.sonypictures.com.br/">Sony Pictures</a></li>
+            <li><a href="http://www.warnerchannel.com/br/">Warner</a></li>
+            <li><a href="http://www.paramountstudios.com/">Paramount Studios</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="full-width.html">Mídia</a><span>Trilha e trailer</span></li>
+        <li><a href="style-demo.html">O filme</a><span>Informações do filme</span></li>
+        <li><a href="index.html">Página Inicial</a><span>Página Inicial</span></li>
+      </ul>
+    </div>
+    <div class="fl_left">
+      <h1><a href="../index.html">Cidade dos Anjos</a></h1>
+      <p>A paixão de um anjo por uma mortal</p>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+  <h1>Trailer do filme</h1>
+  <center>
+   <video width="640" height="480" controls="controls">
+  <source src="video/trailer.mp4" type="video/mp4">
+  </center>
+  </video>
+
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+  <h1>Trilha Sonora</h1>
+  <center>
+  <img src="trilha/City_Of_Angels_Back-001.jpg" alt="" />  
+  <br />
+    <audio id="player" autoplay controls>
+    <source id="player-source" type="audio/mpeg"/>    
+  </audio> <br/>
+  <input id="btnAnt" type="button" value="Anterior"/>
+  <input id="btnNext" type="button" value="Próximo"/>
+  <p id="display"></p>
+  </center>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+    <p class="fl_left">Copyright &copy; 2015 - Todos os direitos reservados - Designer Luciano O. Medina - TADS II IfSul - Bagé</p>
+    <p class="fl_right">Template por <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

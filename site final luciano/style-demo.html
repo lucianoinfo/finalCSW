@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Gallerised
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Cidade dos Anjos, Informações</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="layout/styles/jquery-ui.css">
+<script src="layout/scripts/jquery-2.1.4.min.js"></script>
+<script src="layout/scripts/jquery.maskedinput.min.js"></script>
+<script src="layout/scripts/jquery-ui.js"></script>
+
+<script>
+  $(function (){
+    $('#txtFone').mask('(99) 9999-9999');     
+    $('#txtData').mask('99/99/9999'); 
+  });
+
+  $(function() {
+    $( "#txtData" ).datepicker();
+  });
+
+function exibeTexto ()
+      {
+        
+        var Nome = document.getElementById("txtNome").value;
+        var Telefone = document.getElementById("txtFone").value;
+        var Data = document.getElementById("txtData").value;
+        var Coment = document.getElementById("comment").value;
+
+        if(Nome.value != "" && Telefone.value != "" && Data.value != "")
+        {   
+          document.getElementById("txtPronto").innerHTML = Nome + " " + Telefone + " - " + Data + " escreveu: " + Coment;
+          
+        }
+
+        else
+          {
+            alert('Voce não preencheu algum campo. Por favor Verifique!!');
+          }
+      }
+
+  function limpar ()
+
+      {
+          document.getElementById("txtNome").value = ""; 
+          document.getElementById("txtFone").value = ""; 
+          document.getElementById("txtData").value = "";
+          document.getElementById("comment").value = "";
+          document.getElementById("txtPronto").innerHTML = ""
+
+      }
+
+
+
+</script>
+
+</head>
+
+
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div id="topnav">
+      <ul>
+        <li class="last"><a href="gallery.html">Galeria</a><span>Imagens</span></li>
+        <li><a href="#">Links</a><span>Links relacionados</span>
+          <ul>
+            <li><a href="http://www.sonypictures.com.br/">Sony Pictures</a></li>
+            <li><a href="http://www.warnerchannel.com/br/">Warner</a></li>
+            <li><a href="http://www.paramountstudios.com/">Paramount Studios</a></li>
+          </ul>
+        </li>
+        <li><a href="full-width.html">Mídia</a><span>Trilha e trailer</span></li>
+        <li class="active"><a href="style-demo.html">O Filme</a><span>Informações do filme</span></li>
+        <li><a href="index.html">Página Inicial</a><span>Página Inicial</span></li>
+      </ul>
+    </div>
+    <div class="fl_left">
+      <h1><a href="index.html">Cidade dos Anjos</a></h1>
+      <p>A paixão de um anjo por uma mortal</p>
+    </div>
+    <br class="clear" />
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+    <div id="content">
+      <h1>Sobre o filme</h1>
+      <img class="imgr" src="images/demo/homepage/imagem8.jpg" alt="" width="125" height="125" />
+      <img class="imgl" src="images/demo/homepage/imagem1.jpg" alt="" width="125" height="125" />
+      <p>Em Los Angeles, uma dedicada cirurgiã (Meg Ryan) fica arrasada quando perde um paciente durante uma operação, no mesmo instante em que um anjo (Nicolas Cage), que estava na sala de cirurgia, começa a se sentir atraído por ela.</p>
+
+      <p>Em pouco tempo ele fica apaixonado pela médica e resolve ficar visível para ela, a fim de poder encontrá-la frequentemente, o que acaba provocando entre os dois uma atração cada vez maior, apesar dela ter um sério relacionamento com um colega de profissão. </p>
+
+      
+      <p>O ser celestial não pode sentir calor, nem o vento no rosto, o gosto de uma fruta ou o toque da sua amada, assim ele cogita em deixar de ser um imortal para poder amar e ser amado intensamente.</p>
+      <br/>
+      <br/>
+
+      <h2>Informações Gerais</h2>
+      <table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nome do Filme: Cidade dos Anjos</th>
+            <th>Distribuidor: Warner </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="light">
+            <td>Ano de Produção: 1997</td>
+            <td>Orçamento: 55.000.000$$</td>
+         </tr>
+          <tr class="dark">
+            <td>Língua: Inglês</td>
+            <td>Formato de Produção: 35mm</td>
+          </tr>
+          <tr class="light">
+            <td>Atores Principais: Nicolas Cage, Meg Ryan, Andre Braugher </td>
+            <td>Duração: 1h53min</td>
+          </tr>
+          <tr class="dark">
+            <td>Gênero: Fantasia, Romance</td>
+            <td>Diretor: Brad Siberling</td>
+          
+          </tr>
+        </tbody>
+      </table>
+      <div id="comments">
+        <h2>Comentários</h2>
+        <ul class="commentlist">
+          <li class="comment_odd">
+            <div class="author"><img class="avatar" src="images/demo/avatar.gif" width="32" height="32" alt="" /><span class="name"><a href="#">Juliano Barbosa</a></span> <span class="wrote">escreveu:</span></div>
+            <div class="submitdate"><a href="#">04 de Agosto de 2009, 8:45</a></div>
+            <p>muito bom,mas triste depois de tanto sacrificio tantas abdicações q seth faz pra viver esse amor maggye morre é decepcionante mas vale a pena assistir</p>
+          </li>
+          <li class="comment_even">
+            <div class="author"><img class="avatar" src="images/demo/avatar.gif" width="32" height="32" alt="" /><span class="name"><a href="#">Pedro Lara</a></span> <span class="wrote">escreveu:</span></div>
+            <div class="submitdate"><a href="#">24 de Setembro de 2009, 1:32</a></div>
+            <p>conta mesmo o que acontece! ao invés de fazer "valer a pena" ver o filme, seu comentário me fez perder a vontade por ja saber o final</p>
+          </li>
+          <li class="comment_odd">
+            <div class="author"><img class="avatar" src="images/demo/avatar.gif" width="32" height="32" alt="" /><span class="name"><a href="#">Fernando da Silva</a></span> <span class="wrote">escreveu:</span></div>
+            <div class="submitdate"><a href="#">11 de Dezembro de 2010, 14:32</a></div>
+            <p>Muito bom este filme. Pra quem gostou de "Antes que termine o dia", "Amor além da vida" e "Ghost" provavelmente irá gostar deste filme aqui também.</p>
+          </li>
+          <li class="comment_odd">
+            <div class="author"><img class="avatar" src="images/demo/avatar.gif" width="32" height="32" alt="" /><span class="name"><a href="#"></a></span> <span class="wrote"><div id="txtPronto"> </div></span></div>
+            
+          </li>
+
+
+        </ul>
+      </div>
+      <h2>Escreva um comentário</h2>
+      <div id="respond">
+        <form action="#" method="post">
+          <p>
+            <label for="txtNome"> Nome: </label>
+            <input type="text" id="txtNome" size="50" placeholder="Insira seu nome aqui"/> <br/>
+          </p>
+          <p>
+            <label for="txtFone">Telefone: </label>
+            <input type="text" id="txtFone" placeholder="(XX) XXXX-XXXX" /> <br/>
+          </p>
+          <p>
+          <label for="txtData"> Data: </label>
+           <input type="text" id="txtData" placeholder="DD/MM/AAAA" /> <br/>
+          </p>
+          <p>
+            <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
+            <label for="comment" style="display:none;"><small>Comment (required)</small></label>
+          </p>
+          <p>
+            <input type="button" value="Cadastrar" onclick="exibeTexto();"  /> 
+            <input type="button" value="Limpar" onclick="limpar();"  /> 
+          </p>
+        </form>
+      </div>
+    
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+    <p class="fl_left">Copyright &copy; 2015 - Todos os direitos reservados - Designer Luciano O. Medina - TADS II IfSul - Bagé</p>
+    <p class="fl_right">Template por <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>
